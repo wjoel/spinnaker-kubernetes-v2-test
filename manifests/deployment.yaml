@@ -20,3 +20,4 @@ spec:
         image: {%name%}
         ports:
         - containerPort: 80
+
