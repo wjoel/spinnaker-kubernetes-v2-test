@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: {%name%}
+        image: registry.default.svc/wjoel/nginx
         ports:
         - containerPort: 80
