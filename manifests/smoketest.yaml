@@ -9,7 +9,7 @@ spec:
       containers:
       - name: smoketest
         image: busybox
-        command: ["sh", "-c", "exit 0"]
+        command: ["sh", "-c", "exit 1"]
       restartPolicy: Never
   backoffLimit: 4
   activeDeadlineSeconds: 120
