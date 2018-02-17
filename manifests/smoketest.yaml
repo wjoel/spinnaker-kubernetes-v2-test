@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: smoketest
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+      - name: smoketest
+        image: busybox
+        command: ["sh", "-c", "exit 0"]
+      restartPolicy: Never
+  backoffLimit: 4
+  activeDeadlineSeconds: 120
